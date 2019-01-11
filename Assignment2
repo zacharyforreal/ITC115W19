@@ -1,0 +1,16 @@
+public class fibo {
+
+    public static void main(String[] args) {
+
+        int count = 12, num1 = 1, num2 = 1;
+
+        for (int i = 1; i <= count; i++){
+            
+        System.out.println(num1+" ");
+
+        int fibosum = num1 + num2;
+        num1 = num2;
+        num2 = fibosum;
+        }
+    }
+}
