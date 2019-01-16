@@ -1,0 +1,21 @@
+
+public class powers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		printpowersofN(2,7);
+		printpowersofN(5,3);
+		
+	}
+
+	private static void printpowersofN(int a, int b) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i <= b; i++) {
+			System.out.println(Math.pow(a, i));
+		}
+		System.out.println();
+	}
+
+}
