@@ -1,0 +1,23 @@
+
+public class test {
+
+	public static void main(String[] args) {
+		repl("hello", 3);
+		repl("world",0);
+		repl("Batman", 5);
+	}
+
+	public static void repl(String word, int x) {
+
+		if (x > 0) {
+			for (int i = 0; i < x; i++) {
+				System.out.println(word);
+			}
+		} else {
+
+			System.out.println("");
+		}
+
+	}
+
+}
