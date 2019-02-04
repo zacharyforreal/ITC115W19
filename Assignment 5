@@ -20,7 +20,7 @@ public class grade {
         
         avg = (number2 + number3 + number4 + number5 + number6) / number1;
         
-        System.out.println(name + "'s grade is" + avg);
+        System.out.println(name + "'s grade is " + avg);
 	}
 
 }
