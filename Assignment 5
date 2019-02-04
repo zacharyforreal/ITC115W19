@@ -1,0 +1,30 @@
+import java.util.Scanner; 
+public class Assignment5
+{ 
+    public static void main(String[] args) 
+    { 
+    	System.out.println("Enter a student record:");
+      
+        Scanner console = new Scanner(System.in);
+        
+        //student record input
+        String name = console.nextLine();   
+        int classes = console.nextInt(); 
+        double grades = console.nextDouble(); 
+  
+        // Print gpa
+        System.out.println(name + "'s grade is" + grades/classes); 
+    } 
+} 
+
+
+
+//Write a method called printGPA that accepts a Scanner for the console as a parameter and calculates a student's grade point average. 
+//The user will type a line of input containing the student's name, then a number that represents the number of scores, followed by that
+//many integer scores. Here are two example dialogues:
+
+//Enter a student record: Maria 5 72 91 84 89 78
+//Marie's grade is 82.8
+
+//Enter s student record: Jordan 4 86 71 62 90
+//Jordan's grade is 77.25
