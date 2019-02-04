@@ -1,3 +1,6 @@
+//Hi Ava I think I made it work, but I still haven't figured out how to put those inputs all in one line. You will probably need to
+//press enter for serveral times when you try to test the code.
+
 import java.util.Scanner;
 public class grade {
 
