@@ -1,21 +1,28 @@
-import java.util.Scanner; 
-public class Assignment5
-{ 
-    public static void main(String[] args) 
-    { 
-    	System.out.println("Enter a student record:");
-      
+import java.util.Scanner;
+public class grade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "Marie";
+        int number1, number2, number3, number4,number5,number6, avg;
+		
         Scanner console = new Scanner(System.in);
         
-        //student record input
-        String name = console.nextLine();   
-        int classes = console.nextInt(); 
-        double grades = console.nextDouble(); 
-  
-        // Print gpa
-        System.out.println(name + "'s grade is" + grades/classes); 
-    } 
-} 
+        System.out.println("Enter a student record:");
+        name = console.nextLine();
+        number1 = console.nextInt();
+        number2 = console.nextInt();
+        number3 = console.nextInt();
+        number4 = console.nextInt();
+        number5 = console.nextInt();
+        number6 = console.nextInt();
+        
+        avg = (number2 + number3 + number4 + number5 + number6) / number1;
+        
+        System.out.println(name + "'s grade is" + avg);
+	}
+
+}
 
 
 
