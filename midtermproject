@@ -1,0 +1,28 @@
+import java.util.Random;
+public class Midterm {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     randomWalk();
+	}
+    public static void randomWalk() {
+    	int position = 0;
+    	int max = 0;
+    	Random one = new Random();
+    	int change;
+    	
+    	while(-3 < position && position < 3) {
+    		
+    	System.out.println("Position: " + position);
+    	change = one.nextBoolean() ? -1 : 1;
+    	position += change;
+    	max = Math.max(max, position);
+    	
+    	} 
+    	
+    	System.out.println("Position: " + position);
+    	System.out.println("Max position = " + max);
+    }
+}
+
+//James was my partner in the midterm
