@@ -1,0 +1,45 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class assignment6 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		boyGirl();
+	}
+
+	public static void boyGirl() throws FileNotFoundException{
+    	File f = new File("boysgirls.txt");
+    	Scanner input = new Scanner(f);
+    	
+    	int boycount = 0;
+    	int boysum = 0;
+    	int girlcount = 0;
+    	int girlsum = 0;
+    	int i = 0;
+    	
+    	while (input.hasNext()) {
+    		
+	    	if (i % 2 == 0) {
+	    		
+	    		input.next();
+	    		boycount ++;
+	    		boysum += input.nextInt();
+	    		i++;
+	    		
+	    	} else {
+	    	
+	    	    input.next();
+	    	    girlcount ++;
+	    	    girlsum += input.nextInt();
+	    	    i++;	    	    
+	    	}
+	    	
+	    	System.out.println(boycount + " boys, " + girlcount + " girls ");
+	        System.out.println("Difference between boys' and girls' sums: " + Math.abs(boysum - girlsum));
+        
+    	}
+	}
+    
+ }
