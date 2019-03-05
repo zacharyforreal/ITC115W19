@@ -16,7 +16,7 @@ public class ProductMain {
        System.out.println();
        
        System.out.println("Procduct 2 code is " + p2.getCode());
-       System.out.println("Product 2 description: " + p1.getDescription());
+       System.out.println("Product 2 description: " + p2.getDescription());
        System.out.println("Product 2 price is $" + p2.getPrice());
        System.out.println("Product 2 counts as " + p2.getProductcount() + " units.");
        System.out.println("Product 2's cost is  $" + p2.purchase());
