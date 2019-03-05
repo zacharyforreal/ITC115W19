@@ -18,7 +18,13 @@ public class ProductMain {
        System.out.println("Product 2 price is $" + p2.getPrice());
        System.out.println("Product 2 counts as " + p2.getProductcount() + " units.");
        System.out.println("Product 2's cost is  $" + p2.purchase());
-	}
+	
+       
+       System.out.println();
+       
+       System.out.println("Total cost is  $" + (p1.purchase() + p2.purchase()));
+       System.out.println("Total unit amount is " + (p1.getProductcount() + p2.getProductcount()));
+		}
  
     
 }
