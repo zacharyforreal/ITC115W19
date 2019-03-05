@@ -8,16 +8,16 @@ public class Product {
 	private double price;
 	private int productcount;
 	
-	//constructor
-	//precondition: code != null
-	public Product(String description) {
-		if(description == null) {
-			throw new NullPointerException();
-		}
-		code = 0;
-		price = 0.0;
-		productcount = 0;
-	}
+// 	//constructor
+// 	//precondition: code != null
+// 	public Product(String description) {
+// 		if(description == null) {
+// 			throw new NullPointerException();
+// 		}
+// 		code = 0;
+// 		price = 0.0;
+// 		productcount = 0;
+// 	}
 	
 	//methods
 	
