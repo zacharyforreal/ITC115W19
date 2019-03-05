@@ -1,3 +1,5 @@
+//the String getter seems not working
+
 public class ProductMain {
 
 	public static void main(String[] args) {
