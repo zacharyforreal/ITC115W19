@@ -1,4 +1,4 @@
-//the String getter seems not working
+
 
 public class ProductMain {
 
