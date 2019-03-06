@@ -19,8 +19,6 @@ public class Product {
 // 		productcount = 0;
 // 	}
 	
-	//methods
-	
 	public Product(int code, String description, double price, int productcount) {
 		if (price < 0.0 || productcount < 0) {
 			throw new IllegalArgumentException();
@@ -29,6 +27,7 @@ public class Product {
 		this.code = code;
 		this.price = price;
 		this.productcount = productcount;
+		this.description = description;
 	}
 	
 	public double purchase() {
