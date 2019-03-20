@@ -1,6 +1,19 @@
 //represents magazines
 public class Magazine extends Inventory{
+	private int latedays;
 	
+	public Magazine(int number, int latedays) {
+		super(number);
+		this.latedays = latedays;
+	}
+	
+	@Override
+	public double getFine() {
+		if (latedays > 0)
+			return 5.0;
+		else
+			return 0;
+	}
 	public void itemnumber() {
 		System.out.println("2129");
 	}

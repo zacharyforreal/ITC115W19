@@ -1,14 +1,21 @@
 // A class to represent CDs.
-public class CD extends DVD {
+public class CD extends Inventory {
 	
-	private String explicit;
+	private int latedays;
 	
-        public CD() {
-		
-		super();
-		
+	public CD(int number, int latedays) {
+		super(number);
+		this.latedays = latedays;
 	}
-
+	
+	@Override
+	public double getFine() {
+		if (latedays > 0)
+			return 5.0;
+		else
+			return 0;
+	}
+    
 	public void itemnumber() {
 		System.out.println("4010");
 	}
@@ -28,6 +35,10 @@ public class CD extends DVD {
     
 	public void explicit() {
 		System.out.println("Dirty language in the content");
+	}
+	
+	public String payFines() {
+		return "This amount of fine needs to be paid: " + this.getFine();
 	}
 }
 

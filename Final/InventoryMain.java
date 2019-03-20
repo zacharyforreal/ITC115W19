@@ -2,16 +2,16 @@
 public class InventoryMain {
 	
 public static void main(String[] args) {
-        Inventory[] e = { new Book(),   new Magazine(), 
-                         new DVD(), new CD() };
+        Inventory[] t = { new Book(0013,0),   new Magazine(2129,0), 
+                         new DVD(3008,3), new CD(4010,2) };
 
-        for (int i = 0; i < e.length; i++) {
+        for (int i = 0; i < t.length; i++) {
         	
-        	e[i].itemnumber();
-            e[i].itemtitle();
+        	t[i].itemnumber();
+            t[i].itemtitle();
 //            e[i].reserve();
-            e[i].checkIn();
-            e[i].checkOut();
+            t[i].checkIn();
+            t[i].checkOut();
 //            e[i].payFines();
             System.out.println();
         }

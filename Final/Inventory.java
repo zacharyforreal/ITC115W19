@@ -1,6 +1,18 @@
 //represent employees in general
 public abstract class Inventory {
 	
+	private int number;
+	public Inventory(int number) {
+		this.number = number;
+	}
+	
+	public abstract double getFine();
+	
+	@Override
+	public String toString() {
+		return "This amount of fine needs to be paid: " + this.getFine();
+	}
+	
 	public void itemnumber() {
 		System.out.println("0001");
 	}
@@ -22,8 +34,9 @@ public abstract class Inventory {
 		System.out.println("To: Jan 15th 2019");
 	}
 	
-	public void payFines() {
+	public String payFines() {
 		System.out.println("Fines need to be charged to the borrower");
+		return null;
 	}
 	
 }
